@@ -24,7 +24,7 @@ const handler = async (req: Request) => {
     const { headers, url } = elevenlabsAccess(elevenKey, path);
     const body: ElevenlabsWire.TTSRequest = {
       text: text,
-      ...(nonEnglish && { model_id: 'eleven_multilingual_v1' }),
+      ...(nonEnglish && { model_id: 'eleven_multilingual_v2' }),
     };
 
     // elevenlabs POST
